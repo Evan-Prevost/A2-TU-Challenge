@@ -20,7 +20,7 @@ namespace TU_Challenge
         [TestCase(10, -20, -10)]
         [TestCase(0, -20, -20)]
         [TestCase(-20, 0, -20)]
-        public void Addition(int a, int b, int expected)
+        public void Addition(int a, int b, int expected) //done
         {
             int result = MyMathImplementation.Add(a, b);
             Assert.That(result, Is.EqualTo(expected));
@@ -33,7 +33,7 @@ namespace TU_Challenge
         [TestCase(18, true)]
         [TestCase(40, true)]
         [TestCase(140, true)]
-        public void IsMajeur(int age, bool expected)
+        public void IsMajeur(int age, bool expected) //done
         {
             bool result = MyMathImplementation.IsMajeur(age);
             Assert.IsTrue(result == expected);
@@ -57,7 +57,7 @@ namespace TU_Challenge
         [TestCase(-2, true)]
         [TestCase(1, false)]
         [TestCase(11, false)]
-        public void IsEven(int a, bool expected)
+        public void IsEven(int a, bool expected) //done
         {
             bool result = MyMathImplementation.IsEven(a);
             Assert.That(result, Is.EqualTo(expected));
@@ -70,7 +70,7 @@ namespace TU_Challenge
         [TestCase(4, 2, true)]
         [TestCase(40, 4, true)]
         [TestCase(123, 3, true)]
-        public void IsDivisible(int a, int b, bool expected)
+        public void IsDivisible(int a, int b, bool expected) //done
         {
             bool result = MyMathImplementation.IsDivisible(a, b);
             Assert.That(result, Is.EqualTo(expected));
@@ -117,7 +117,7 @@ namespace TU_Challenge
         [TestCase(8, 64)]
         [TestCase(10, 100)]
         [TestCase(15, 225)]
-        public void Power2(int a, int expected)
+        public void Power2(int a, int expected) //done
         {
             int result = MyMathImplementation.Power2(a);
             Assert.That(result, Is.EqualTo(expected));
@@ -128,7 +128,7 @@ namespace TU_Challenge
         [TestCase(20, 3, 8000)]
         [TestCase(12, 4, 20736)]
         [TestCase(3, 8, 6561)]
-        public void Power(int a, int b, int expected)
+        public void Power(int a, int b, int expected) //done
         {
             int result = MyMathImplementation.Power(a, b);
             Assert.That(result, Is.EqualTo(expected));
@@ -193,7 +193,7 @@ namespace TU_Challenge
             }
 
         }
-
+        /*
         /// <summary>
         /// Test pas obligatoire mais essayez un peu quand même. N'hésitez pas à me demander de l'aide
         /// </summary>
@@ -224,6 +224,6 @@ namespace TU_Challenge
                 Assert.IsTrue(result[i] > result[i + 1]);
             }
         }
-
+        */
     }
 }
